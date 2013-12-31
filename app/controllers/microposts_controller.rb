@@ -5,6 +5,11 @@ class MicropostsController < ApplicationController
   # GET /microposts.json
   def index
     @microposts = Micropost.all
+    
+    respond_to do |format|
+     format.html
+     format.atom
+    end 
   end
 
   # GET /microposts/1
