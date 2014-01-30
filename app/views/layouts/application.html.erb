@@ -8,7 +8,27 @@
   <%= auto_discovery_link_tag :atom, microposts_path(:atom) %>
 </head>
 <body>
-
+<div id="slider">
+<div id="tobe_colored" class="demoslides">
+ <div style="background-color: #2aca76;" data-slidr="one">one</div>
+ <div style="background-color: #69bfe9;" data-slidr="two">two</div>
+ <div style="background-color: #fa7979;" data-slidr="three">three</div>
+ <div style="background-color: #a685ca;" data-slidr="four">four</div>
+ <div style="background-color: #fee687;" data-slidr="five">five</div>
+ <div style="background-color: #ed956e;" data-slidr="six">six</div>
+</div>   
+</div>
+<script type="text/javascript">
+slidr.create('tobe_colored', {
+		breadcrumbs: true,
+		controls:'corner',
+		fade: false,
+		keyboard:true,
+		overflow: true,
+		touch: true,
+		transition: 'cube'
+		}).start();
+</script>
 <%= yield %>
 
 </body>

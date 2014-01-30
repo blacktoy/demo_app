@@ -67,3 +67,33 @@ div {
     list-style: square;
   }
 }
+
+//slidr.js
+#slider>div{
+  line-height: 285px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 400;
+  letter-spacing: -3px;
+  display: none;
+  color: white;
+}
+#slider {
+  width: 1200px;
+  height: 300px;
+  margin: 0 auto
+}
+#slider>div {
+  line-height: 285px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 400;
+  letter-spacing: -3px;
+  display: none;
+  color: white;
+}
+.demoslides div{width:100%; padding: 5px;}
